@@ -12358,7 +12358,7 @@ MonoBehaviour:
   movespeed: 5
   rb: {fileID: 870864401}
   animator: {fileID: 870864403}
-  sounds: {fileID: 953449159}
+  sounds: {fileID: 0}
   toggleSound: 0
 --- !u!50 &870864401
 Rigidbody2D:
@@ -12464,6 +12464,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: {fileID: 1039438035}
+  playerTimer: {fileID: 1039438034}
+  timer: 10
+  endtimer: 0
 --- !u!61 &870864405
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13325,12 +13328,12 @@ GameObject:
   - component: {fileID: 1039438036}
   - component: {fileID: 1039438035}
   m_Layer: 0
-  m_Name: Healthbar
+  m_Name: Player Healthbar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1039438035
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13344,7 +13347,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bar: {fileID: 865935630}
-  score: {fileID: 0}
+  score: {fileID: 1249698755}
   startingHealth: 100
   currentHealth: 20
   dead: 0

@@ -6,6 +6,7 @@ using UnityEngine;
 public class PlayerHandler : MonoBehaviour
 {
     public HealthBar health;
+    public GameObject playerTimer;
     public float timer = 10f;
     private bool endtimer = false;
     private float playedTime = 0;
@@ -25,13 +26,16 @@ public class PlayerHandler : MonoBehaviour
                 timer -= 1f * Time.fixedDeltaTime;
             }
             if (timer <= 0)
+            {
+                playerTimer.SetActive(true);
                 health.doDamage(0.10f);
+            }
         }
     }
     void Update()
     {
         playedTime += Time.deltaTime;
-        if ((int)playedTime == 10)
+        if ((int)playedTime == 7 && playerTimer.activeSelf == false)
         {
             endtimer = true;
         }
