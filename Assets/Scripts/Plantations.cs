@@ -6,12 +6,13 @@ public class Plantations : MonoBehaviour
 {
     public HealthBar healthBar;
     private bool inCol = false;
-    private float timer = 10f;
+    //private float timer = 10f;
 
     private void Start()
     {
         healthBar.startingHealth = 100;
         healthBar.currentHealth = 100;
+        healthBar.setHealth(healthBar.currentHealth);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -40,7 +41,7 @@ public class Plantations : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E) && inCol == true)
         {
             healthBar.heal();
-            timer = 10f;
+            //timer = 10f;
         }
 
     }
