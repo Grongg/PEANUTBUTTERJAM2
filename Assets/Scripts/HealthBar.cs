@@ -8,6 +8,7 @@ public class HealthBar : MonoBehaviour
 {
 
     public Transform bar;
+    public ScoreHandler score;
     public float startingHealth;
     public float currentHealth;
     public bool dead = false;
@@ -51,6 +52,7 @@ public class HealthBar : MonoBehaviour
     {
         if (currentHealth != 100)
         {
+            
             if ((currentHealth + 50f) > (startingHealth * 0.25))
             {
                 Color newColor = new Color(0, 0.4716f, 0.0758f, 1);
@@ -59,9 +61,13 @@ public class HealthBar : MonoBehaviour
             if (currentHealth + 50f <= 100)
             {
                 setHealth(currentHealth + 50f);
+                score.addPoints(50);
             }
             else
+            {
+                score.addPoints((int)currentHealth + 50 - 100);
                 setHealth(100);
+            }
         }
     }
 }

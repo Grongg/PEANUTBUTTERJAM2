@@ -12,7 +12,7 @@ public static class DataCollector
         get;
         set;
     }
-    public static bool State
+    public static string Death
     {
         get;
         set;
