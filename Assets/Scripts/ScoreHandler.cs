@@ -22,11 +22,6 @@ public class ScoreHandler : MonoBehaviour
         displayScore();
     }
 
-    public int getScore()
-    {
-        return currentScore;
-    }
-
     public void displayScore()
     {
         scoretxt.text = "Score: " + currentScore.ToString();

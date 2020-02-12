@@ -5,6 +5,8 @@ using UnityEngine;
 public class Plantations : MonoBehaviour
 {
     public HealthBar healthBar;
+    private bool inCol = false;
+    private float timer = 10f;
 
     private void Start()
     {
@@ -14,15 +16,32 @@ public class Plantations : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        //Debug.Log("Enter");
+        inCol = true;
     }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        inCol = false;
+    }
+
+    /*private void FixedUpdate()
+    {
+        Debug.Log(timer) ;
+        if (timer > 0)
+        {
+            timer -= 1f * Time.fixedDeltaTime;
+        }
+        if (timer <= 0)
+            healthBar.doDamage(0.10f);
+    }*/
 
     private void Update()
     {
-        healthBar.doDamage(0.01f);
-        if (healthBar.dead)
+        if (Input.GetKeyDown(KeyCode.E) && inCol == true)
         {
-            //Debug.Log("Dead");
+            healthBar.heal();
+            timer = 10f;
         }
+
     }
 }

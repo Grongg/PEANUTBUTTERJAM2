@@ -55,10 +55,12 @@ public class HealthBar : MonoBehaviour
         {
             if ((currentHealth + 0.10f) > (startingHealth * 0.25))
             {
-                setColor(Color.green);
+                Color newColor = new Color(0, 120, 19, 255);
             }
             if (currentHealth + 0.10f <= 100)
-                setHealth(currentHealth + 0.10f);
+            {
+                setHealth(currentHealth + 0.60f);
+            }
         }
     }
 }
