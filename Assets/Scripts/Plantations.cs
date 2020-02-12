@@ -6,7 +6,7 @@ public class Plantations : MonoBehaviour
 {
     public HealthBar healthBar;
     private bool inCol = false;
-    //private float timer = 10f;
+    private float timer = 10f;
 
     private void Start()
     {
@@ -25,23 +25,23 @@ public class Plantations : MonoBehaviour
         inCol = false;
     }
 
-    /*private void FixedUpdate()
+    private void FixedUpdate()
     {
-        Debug.Log(timer) ;
+        //Debug.Log(timer);
         if (timer > 0)
         {
             timer -= 1f * Time.fixedDeltaTime;
         }
         if (timer <= 0)
             healthBar.doDamage(0.10f);
-    }*/
+    }
 
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.E) && inCol == true)
         {
             healthBar.heal();
-            //timer = 10f;
+            timer = 10f;
         }
 
     }

@@ -51,14 +51,17 @@ public class HealthBar : MonoBehaviour
     {
         if (currentHealth != 100)
         {
-            if ((currentHealth + 0.10f) > (startingHealth * 0.25))
+            if ((currentHealth + 50f) > (startingHealth * 0.25))
             {
-                Color newColor = new Color(0, 120, 19, 255);
+                Color newColor = new Color(0, 0.4716f, 0.0758f, 1);
+                setColor(newColor);
             }
-            if (currentHealth + 0.10f <= 100)
+            if (currentHealth + 50f <= 100)
             {
-                setHealth(currentHealth + 0.60f);
+                setHealth(currentHealth + 50f);
             }
+            else
+                setHealth(100);
         }
     }
 }
