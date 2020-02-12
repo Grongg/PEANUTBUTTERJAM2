@@ -12524,7 +12524,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bar: {fileID: 684481331}
-  score: {fileID: 1249698755}
   startingHealth: 100
   currentHealth: 0
   dead: 0
@@ -12589,7 +12588,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bar: {fileID: 865935630}
-  score: {fileID: 1249698755}
   startingHealth: 100
   currentHealth: 20
   dead: 0
@@ -19013,7 +19011,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bar: {fileID: 1862059937}
-  score: {fileID: 1249698755}
   startingHealth: 100
   currentHealth: 0
   dead: 0
@@ -19357,7 +19354,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bar: {fileID: 1495506152}
-  score: {fileID: 1249698755}
   startingHealth: 100
   currentHealth: 0
   dead: 0
@@ -19452,7 +19448,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bar: {fileID: 849550916}
-  score: {fileID: 1249698755}
   startingHealth: 100
   currentHealth: 0
   dead: 0
@@ -21194,7 +21189,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bar: {fileID: 987778794}
-  score: {fileID: 1249698755}
   startingHealth: 100
   currentHealth: 0
   dead: 0

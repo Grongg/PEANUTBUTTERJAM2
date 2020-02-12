@@ -1,6 +1,5 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public class PlayerHandler : MonoBehaviour
@@ -15,10 +14,6 @@ public class PlayerHandler : MonoBehaviour
     }
     void Update()
     {
-        if (health.dead == true)
-        {
-            DataCollector.Death = "You died";
-            SceneManager.LoadScene("EndGameScreen", LoadSceneMode.Single);
-        }
+
     }
 }
