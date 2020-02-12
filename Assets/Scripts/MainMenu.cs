@@ -6,9 +6,11 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
+    public AudioSource startsound;
     
     public void PlayGame() // Fonction that is attached to the PlayButton to load the game scene
     {
+        startsound.Play(0);
         SceneManager.LoadScene("MainGame", LoadSceneMode.Single);
     }
 
