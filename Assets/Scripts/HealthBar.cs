@@ -8,13 +8,13 @@ public class HealthBar : MonoBehaviour
 {
 
     public Transform bar;
-    public float startingHealth = 100;
-    public float currentHealth = 100;
+    public float startingHealth;
+    public float currentHealth;
     public bool dead = false;
 
     private void Start()
     {
-        currentHealth = startingHealth;
+        //currentHealth = startingHealth;
         bar = transform.Find("Bar");
         doDamage(0);
     }
@@ -47,6 +47,18 @@ public class HealthBar : MonoBehaviour
             setHealth(currentHealth - dmg);
             if (currentHealth <= (startingHealth * 0.25))
                 setColor(Color.red);
+        }
+    }
+    public void heal()
+    {
+        if (currentHealth != 100)
+        {
+            if ((currentHealth + 0.10f) > (startingHealth * 0.25))
+            {
+                setColor(Color.green);
+            }
+            if (currentHealth + 0.10f <= 100)
+                setHealth(currentHealth + 0.10f);
         }
     }
 }

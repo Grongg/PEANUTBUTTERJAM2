@@ -9,6 +9,7 @@ public class Plantations : MonoBehaviour
     private void Start()
     {
         healthBar.startingHealth = 100;
+        healthBar.currentHealth = 100;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
