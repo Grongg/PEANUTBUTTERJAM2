@@ -10,9 +10,11 @@ public class HealthBar : MonoBehaviour
     public Transform bar;
     public float startingHealth = 100;
     public float currentHealth = 100;
+    public bool dead = false;
 
     private void Start()
     {
+        currentHealth = startingHealth;
         bar = transform.Find("Bar");
         doDamage(0);
     }
@@ -38,6 +40,7 @@ public class HealthBar : MonoBehaviour
         if (currentHealth - dmg <= 0)
         {
             setHealth(0);
+            dead = true;
         }
         else
         {
