@@ -12358,7 +12358,7 @@ MonoBehaviour:
   movespeed: 5
   rb: {fileID: 870864401}
   animator: {fileID: 870864403}
-  sounds: {fileID: 0}
+  sounds: {fileID: 953449159}
   toggleSound: 0
 --- !u!50 &870864401
 Rigidbody2D:
@@ -12466,7 +12466,6 @@ MonoBehaviour:
   health: {fileID: 1039438035}
   playerTimer: {fileID: 1039438034}
   timer: 10
-  endtimer: 0
 --- !u!61 &870864405
 BoxCollider2D:
   m_ObjectHideFlags: 0
