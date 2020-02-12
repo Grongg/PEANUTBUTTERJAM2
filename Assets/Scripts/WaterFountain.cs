@@ -15,9 +15,11 @@ public class WaterFountain : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         Player.health.heal();
+        Player.timer = 10f;
     }
     private void OnTriggerStay2D(Collider2D collision)
     {
        Player.health.heal();
+        Player.timer = 10f;
     }
 }
