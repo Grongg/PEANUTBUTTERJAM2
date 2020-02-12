@@ -14,13 +14,13 @@ public class EndGame : MonoBehaviour
 
     private void Update()
     {
-        if (DataCollector.State == true)
+        if (DataCollector.Death == "You died")
         {
-            statetxt.text = "You Win and escaped!";
+            statetxt.text = "You died and your plantations burned";
         }
-        else
+        else if (DataCollector.Death == "Plantations burned")
         {
-            statetxt.text = "You Lost and died!";
+            statetxt.text = "Your plantations burned!";
         }
     }
 }

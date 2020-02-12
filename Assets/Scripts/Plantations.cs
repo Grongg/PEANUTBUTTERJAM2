@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public class Plantations : MonoBehaviour
@@ -43,6 +44,10 @@ public class Plantations : MonoBehaviour
             healthBar.heal();
             timer = 10f;
         }
-
+        if (healthBar.dead == true)
+        {
+            DataCollector.Death = "Plantations burned";
+            SceneManager.LoadScene("EndGameScreen", LoadSceneMode.Single);
+        }
     }
 }
