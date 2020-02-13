@@ -7,6 +7,7 @@ public class ScoreHandler : MonoBehaviour
 {
     private int startingScore = 0;
     private int currentScore;
+    private int count = 0;
     public TextMeshProUGUI scoretxt;
 
     private void Start()
@@ -20,6 +21,15 @@ public class ScoreHandler : MonoBehaviour
         currentScore = score;
         DataCollector.Score = currentScore;
         displayScore();
+    }
+    private void FixedUpdate()
+    {
+        count +=1;
+        if (count == 50)
+        {
+            count = 0;
+            addPoints(10);
+        }
     }
 
     public void displayScore()
