@@ -14177,10 +14177,10 @@ GameObject:
   - component: {fileID: 953449164}
   - component: {fileID: 953449165}
   - component: {fileID: 953449166}
-  - component: {fileID: 953449167}
   - component: {fileID: 953449170}
   - component: {fileID: 953449169}
   - component: {fileID: 953449168}
+  - component: {fileID: 953449167}
   m_Layer: 0
   m_Name: SoundHandler
   m_TagString: Untagged
@@ -14906,9 +14906,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: eecec8392c5da9c4b92944344fc05331, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 65fe407ec9f50c044aa3d89178202afc, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.402
+  m_Volume: 0.404
   m_Pitch: 1
   Loop: 1
   Mute: 0
