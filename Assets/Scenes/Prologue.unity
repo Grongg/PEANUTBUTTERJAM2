@@ -834,8 +834,10 @@ MonoBehaviour:
 
     Use E to interact with the well and the plants
 
-    Don''t
-    let their hp drop to 0!'
+    Avoid burning
+    up by taking a dip in the fountain
+
+    Don''t let their hp drop to 0!'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
   m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
@@ -905,12 +907,12 @@ MonoBehaviour:
   m_margin: {x: 5.5222015, y: -2.2110643, z: 2.4848676, w: 1.0413507}
   m_textInfo:
     textComponent: {fileID: 1203447942}
-    characterCount: 372
+    characterCount: 421
     spriteCount: 0
-    spaceCount: 71
-    wordCount: 71
+    spaceCount: 81
+    wordCount: 81
     linkCount: 0
-    lineCount: 11
+    lineCount: 12
     pageCount: 1
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0

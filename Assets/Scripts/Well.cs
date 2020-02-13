@@ -8,11 +8,15 @@ public class Well : MonoBehaviour
     public HealthBar waterbar;
     public SoundHandler sound;
     private bool inCol = false;
+    public bool wellOnce = false;
+    private void Start()
+    {
+    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        inCol = true;
         if (E.activeSelf == false && collision.tag == "Player")
         {
+            inCol = true;
             E.SetActive(true);
         }
             
@@ -27,7 +31,7 @@ public class Well : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E) && inCol == true)
         {
-            //sound.arrosageSound.Play(0);
+            wellOnce = true;
             waterbar.setHealth(100);
             sound.remplissageSound.Play(0);
         }

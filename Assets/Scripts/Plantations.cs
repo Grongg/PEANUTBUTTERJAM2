@@ -15,7 +15,7 @@ public class Plantations : MonoBehaviour
     public float timer;
     public int timerspeed;
     public float speedup = 1f;
-
+    public Well well;
     private void Start()
     {
         healthBar.startingHealth = 100;
@@ -43,7 +43,6 @@ public class Plantations : MonoBehaviour
 
     private void FixedUpdate()
     {
-        //Debug.Log(timer);
         if (timer > 0)
         {
             timer -= 1f * Time.fixedDeltaTime;
@@ -57,19 +56,19 @@ public class Plantations : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E) && inCol == true)
+        if (Input.GetKeyDown(KeyCode.E) && inCol == true && well.wellOnce == true)
         {
             sound.arrosageSound.Play(0);
             if (waterbar.currentHealth != 0f)
             {
                 healthBar.heal();
-                waterbar.doDamage(10);
+                waterbar.setHealth(waterbar.currentHealth - 10);
                 timer = timerspeed * speedup;
                 speedup -= 0.02f;
                 player.animatewatering();
             }
         }
-        if (Input.GetKeyUp(KeyCode.E) && inCol == true)
+        if (Input.GetKeyUp(KeyCode.E) && inCol == true && well.wellOnce)
             player.animatestopwatering();
         if (healthBar.dead == true)
         {

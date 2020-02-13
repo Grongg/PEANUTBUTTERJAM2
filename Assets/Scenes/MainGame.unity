@@ -330,6 +330,7 @@ MonoBehaviour:
   timer: 25
   timerspeed: 20
   speedup: 1
+  well: {fileID: 1952267514}
 --- !u!61 &40303720
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -690,6 +691,7 @@ MonoBehaviour:
   timer: 40
   timerspeed: 30
   speedup: 1
+  well: {fileID: 1952267514}
 --- !u!61 &59952566
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12511,6 +12513,7 @@ MonoBehaviour:
   timer: 20
   timerspeed: 20
   speedup: 1
+  well: {fileID: 1952267514}
 --- !u!61 &646781836
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13815,7 +13818,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 870864398}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.21, y: -3.6, z: 509.6466}
+  m_LocalPosition: {x: -10.14, y: 4.59, z: 509.6466}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1039438036}
@@ -13961,7 +13964,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.03262058, y: -0.43059176}
+  m_Offset: {x: 0.032620564, y: -0.35658878}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -13972,7 +13975,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.32584125, y: 0.13881648}
+  m_Size: {x: 0.3998442, y: 0.28682244}
   m_EdgeRadius: 0
 --- !u!1 &883597999
 GameObject:
@@ -14028,6 +14031,7 @@ MonoBehaviour:
   timer: 10
   timerspeed: 10
   speedup: 1
+  well: {fileID: 1952267514}
 --- !u!61 &883598002
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -26497,6 +26501,7 @@ MonoBehaviour:
   timer: 50
   timerspeed: 30
   speedup: 1
+  well: {fileID: 1952267514}
 --- !u!61 &1951775211
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -26598,6 +26603,7 @@ MonoBehaviour:
   E: {fileID: 508988164}
   waterbar: {fileID: 43703911}
   sound: {fileID: 953449159}
+  wellOnce: 0
 --- !u!1 &1982354985
 GameObject:
   m_ObjectHideFlags: 0
