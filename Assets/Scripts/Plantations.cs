@@ -12,7 +12,9 @@ public class Plantations : MonoBehaviour
     public SoundHandler sound;
     public PlayerHandler player;
     private bool inCol = false;
-    private float timer = 10f;
+    public float timer;
+    public int timerspeed;
+    public float speedup = 1f;
 
     private void Start()
     {
@@ -62,7 +64,8 @@ public class Plantations : MonoBehaviour
             {
                 healthBar.heal();
                 waterbar.doDamage(10);
-                timer = 10f;
+                timer = timerspeed * speedup;
+                speedup -= 0.02f;
                 player.animatewatering();
             }
         }

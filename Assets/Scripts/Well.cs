@@ -6,6 +6,7 @@ public class Well : MonoBehaviour
 {
     public GameObject E;
     public HealthBar waterbar;
+    public SoundHandler sound;
     private bool inCol = false;
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -28,6 +29,11 @@ public class Well : MonoBehaviour
         {
             //sound.arrosageSound.Play(0);
             waterbar.setHealth(100);
+            sound.remplissageSound.Play(0);
+        }
+        if (Input.GetKeyUp(KeyCode.E) && inCol == true)
+        {
+            sound.remplissageSound.Stop();
         }
     }
 }
