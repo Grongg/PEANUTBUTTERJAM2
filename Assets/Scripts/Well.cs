@@ -5,6 +5,7 @@ using UnityEngine;
 public class Well : MonoBehaviour
 {
     public GameObject E;
+    public HealthBar waterbar;
     private bool inCol = false;
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -23,6 +24,10 @@ public class Well : MonoBehaviour
     }
     private void Update()
     {
-        
+        if (Input.GetKeyDown(KeyCode.E) && inCol == true)
+        {
+            //sound.arrosageSound.Play(0);
+            waterbar.setHealth(100);
+        }
     }
 }

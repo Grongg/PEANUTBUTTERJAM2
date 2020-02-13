@@ -6,7 +6,6 @@ using UnityEngine;
 
 public class HealthBar : MonoBehaviour
 {
-
     public Transform bar;
     public ScoreHandler score;
     public float startingHealth;
@@ -61,7 +60,7 @@ public class HealthBar : MonoBehaviour
             if (currentHealth + 50f <= 100)
             {
                 setHealth(currentHealth + 50f);
-                score.addPoints(50);
+                score.addPoints(50);;
             }
             else
             {

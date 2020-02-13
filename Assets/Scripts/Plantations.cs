@@ -6,6 +6,7 @@ using UnityEngine;
 
 public class Plantations : MonoBehaviour
 {
+    public HealthBar waterbar;
     public HealthBar healthBar;
     public GameObject E;
     public SoundHandler sound;
@@ -53,8 +54,14 @@ public class Plantations : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E) && inCol == true)
         {
             sound.arrosageSound.Play(0);
-            healthBar.heal();
-            timer = 10f;
+            if (waterbar.currentHealth != 0f)
+            {
+                healthBar.heal();
+                Debug.Log("why?");
+                waterbar.doDamage(10);
+                Debug.Log("why?2");
+                timer = 10f;
+            }
         }
         if (healthBar.dead == true)
         {
