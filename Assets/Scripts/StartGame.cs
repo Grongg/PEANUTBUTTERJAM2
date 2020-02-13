@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using UnityEngine.SceneManagement;
 using UnityEngine;
 
-public class PlayButton : MonoBehaviour
+public class StartGame : MonoBehaviour
 {
     public void ChangeScene()
     {
-        SceneManager.LoadScene("Prologue", LoadSceneMode.Single);
+        SceneManager.LoadScene("MainGame", LoadSceneMode.Single);
     }
 }
