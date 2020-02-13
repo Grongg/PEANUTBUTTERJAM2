@@ -7,6 +7,7 @@ public class PlayerHandler : MonoBehaviour
 {
     public HealthBar health;
     public GameObject playerTimer;
+    public SoundHandler sounds;
     public float timer = 10f;
     private bool endtimer = false;
     private float playedTime = 0;
@@ -24,6 +25,8 @@ public class PlayerHandler : MonoBehaviour
             if (timer > 0)
             {
                 timer -= 1f * Time.fixedDeltaTime;
+                if (timer <= 0)
+                    sounds.burningPlayerSound.Play(0);
             }
             if (timer <= 0)
             {

@@ -6,6 +6,7 @@ using UnityEngine;
 public class Plantations : MonoBehaviour
 {
     public HealthBar healthBar;
+    public SoundHandler sound;
     private bool inCol = false;
     private float timer = 10f;
 
@@ -32,6 +33,9 @@ public class Plantations : MonoBehaviour
         if (timer > 0)
         {
             timer -= 1f * Time.fixedDeltaTime;
+            if (timer <= 0)
+                sound.burningPlantSound.Play(0);
+
         }
         if (timer <= 0)
             healthBar.doDamage(0.10f);
@@ -41,6 +45,7 @@ public class Plantations : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E) && inCol == true)
         {
+            sound.arrosageSound.Play(0);
             healthBar.heal();
             timer = 10f;
         }

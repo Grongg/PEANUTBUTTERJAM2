@@ -8,6 +8,12 @@ public class SoundHandler : MonoBehaviour
     public AudioSource grassSound;
     public AudioSource roadSound;
     public AudioSource waterSound;
+    public AudioSource arrosageSound;
+    public AudioSource remplissageSound;
+    public AudioSource burningPlayerSound;
+    public AudioSource burningPlantSound;
+    public AudioSource levelUp;
+    public AudioSource revitalized;
     // Start is called before the first frame update
     void Start()
     {
