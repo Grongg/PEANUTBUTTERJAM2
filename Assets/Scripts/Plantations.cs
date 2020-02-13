@@ -18,6 +18,9 @@ public class Plantations : MonoBehaviour
         healthBar.startingHealth = 100;
         healthBar.currentHealth = 100;
         healthBar.setHealth(healthBar.currentHealth);
+        //waterbar.startingHealth = 100;
+        //waterbar.currentHealth = 100;
+        //waterbar.setHealth(waterbar.currentHealth);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -57,9 +60,7 @@ public class Plantations : MonoBehaviour
             if (waterbar.currentHealth != 0f)
             {
                 healthBar.heal();
-                Debug.Log("why?");
-                waterbar.doDamage(10);
-                Debug.Log("why?2");
+                waterbar.doDamage(80);
                 timer = 10f;
             }
         }
