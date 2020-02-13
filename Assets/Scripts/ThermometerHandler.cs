@@ -20,7 +20,7 @@ public class ThermometerHandler : MonoBehaviour
         if (timer >= 5f)
         {
             if (thermometerBar.currentHealth != 100)           
-                thermometerBar.currentHealth += 5;
+                thermometerBar.currentHealth += 1;
             thermometerBar.setHealth(thermometerBar.currentHealth);
             timer = 0f;
         }
