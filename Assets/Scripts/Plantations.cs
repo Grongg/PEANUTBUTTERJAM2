@@ -10,6 +10,7 @@ public class Plantations : MonoBehaviour
     public HealthBar healthBar;
     public GameObject E;
     public SoundHandler sound;
+    public PlayerHandler player;
     private bool inCol = false;
     private float timer = 10f;
 
@@ -60,10 +61,13 @@ public class Plantations : MonoBehaviour
             if (waterbar.currentHealth != 0f)
             {
                 healthBar.heal();
-                waterbar.doDamage(80);
+                waterbar.doDamage(10);
                 timer = 10f;
+                player.animatewatering();
             }
         }
+        if (Input.GetKeyUp(KeyCode.E) && inCol == true)
+            player.animatestopwatering();
         if (healthBar.dead == true)
         {
             DataCollector.Death = "Plantations burned";

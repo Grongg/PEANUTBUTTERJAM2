@@ -326,6 +326,7 @@ MonoBehaviour:
   healthBar: {fileID: 921201159}
   E: {fileID: 423944735}
   sound: {fileID: 953449159}
+  player: {fileID: 870864404}
 --- !u!61 &40303720
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -682,6 +683,7 @@ MonoBehaviour:
   healthBar: {fileID: 1239948670}
   E: {fileID: 53159050}
   sound: {fileID: 953449159}
+  player: {fileID: 870864404}
 --- !u!61 &59952566
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12554,6 +12556,7 @@ MonoBehaviour:
   healthBar: {fileID: 1139532206}
   E: {fileID: 644383404}
   sound: {fileID: 953449159}
+  player: {fileID: 870864404}
 --- !u!61 &646781836
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13989,6 +13992,7 @@ MonoBehaviour:
   playerTimer: {fileID: 1039438034}
   arrow: {fileID: 604254049}
   sounds: {fileID: 953449159}
+  animator: {fileID: 870864403}
   timer: 10
 --- !u!61 &870864405
 BoxCollider2D:
@@ -14066,6 +14070,7 @@ MonoBehaviour:
   healthBar: {fileID: 1259777416}
   E: {fileID: 1946124612}
   sound: {fileID: 953449159}
+  player: {fileID: 870864404}
 --- !u!61 &883598002
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -26531,6 +26536,7 @@ MonoBehaviour:
   healthBar: {fileID: 1557496871}
   E: {fileID: 644591345}
   sound: {fileID: 953449159}
+  player: {fileID: 870864404}
 --- !u!61 &1951775211
 BoxCollider2D:
   m_ObjectHideFlags: 0

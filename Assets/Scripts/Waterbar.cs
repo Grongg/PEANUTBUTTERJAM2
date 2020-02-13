@@ -7,11 +7,8 @@ public class Waterbar : MonoBehaviour
     public HealthBar waterBar;
     void Start()
     {
-        waterBar.startingHealth = 100;
-        waterBar.currentHealth = 100;
+        waterBar.startingHealth = 0;
+        waterBar.currentHealth = 0;
         waterBar.setHealth(waterBar.currentHealth);
-    }
-    void Update()
-    {
     }
 }

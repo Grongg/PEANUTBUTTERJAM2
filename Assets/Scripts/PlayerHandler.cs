@@ -9,6 +9,7 @@ public class PlayerHandler : MonoBehaviour
     public GameObject playerTimer;
     public GameObject arrow;
     public SoundHandler sounds;
+    public Animator animator;
     public float timer = 10f;
     private bool endtimer = false;
     private bool arrowtimer = false;
@@ -58,5 +59,13 @@ public class PlayerHandler : MonoBehaviour
             DataCollector.Death = "You died";
             SceneManager.LoadScene("EndGameScreen", LoadSceneMode.Single);
         }
+    }
+    public void animatewatering()
+    {
+        animator.SetBool("watering", true);
+    }
+    public void animatestopwatering()
+    {
+        animator.SetBool("watering", false);
     }
 }
