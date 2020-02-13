@@ -8,6 +8,7 @@ TagManager:
   - Grass
   - Dirt
   - Water
+  - Well
   layers:
   - Default
   - TransparentFX

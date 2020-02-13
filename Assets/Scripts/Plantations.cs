@@ -1,11 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.SceneManagement;
+using TMPro;
 using UnityEngine;
 
 public class Plantations : MonoBehaviour
 {
     public HealthBar healthBar;
+    public GameObject E;
     public SoundHandler sound;
     private bool inCol = false;
     private float timer = 10f;
@@ -20,11 +22,16 @@ public class Plantations : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         inCol = true;
+        if (E.activeSelf == false)
+        {
+            E.SetActive(true);
+        }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
         inCol = false;
+        E.SetActive(false);
     }
 
     private void FixedUpdate()
